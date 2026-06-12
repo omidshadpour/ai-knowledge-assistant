@@ -6,7 +6,7 @@ import streamlit as st
 import requests
 import uuid
 
-API_URL = "https://om1d-ai-knowledge-assistant.hf.space"
+API_URL = "https://scorch-engraved-exes.ngrok-free.dev"
 
 st.set_page_config(page_title = "RAG Chatbot" , layout = "wide")
 
