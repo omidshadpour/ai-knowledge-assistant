@@ -8,7 +8,7 @@ import requests
 import uuid
 from app.core.config import settings
 
-API_URL = "http://localhost:8000"
+API_URL = "https://om1d-ai-knowledge-assistant.hf.space"
 
 st.set_page_config(page_title = "RAG Chatbot" , layout = "wide")
 
