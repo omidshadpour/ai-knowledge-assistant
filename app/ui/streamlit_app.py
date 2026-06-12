@@ -8,7 +8,7 @@ import requests
 import uuid
 from app.core.config import settings
 
-API_URL = settings.API_URL
+API_URL = "http://localhost:8000"
 
 st.set_page_config(page_title = "RAG Chatbot" , layout = "wide")
 
