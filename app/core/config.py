@@ -2,11 +2,6 @@ from pydantic_settings import BaseSettings , SettingsConfigDict
 
 class Settings(BaseSettings):
 
-    # LLM Setting
-    OLLAMA_URL: str
-    OLLAMA_MODEL: str
-    OLLAMA_TIMEOUT: int
-
     # Groq Setting
     GROQ_API_KEY: str
     GROQ_MODEL: str
