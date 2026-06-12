@@ -3,7 +3,7 @@
 A production-ready RAG (Retrieval-Augmented Generation) chatbot that lets you upload PDF documents and chat with them using AI.
 
 ## 🚀 Live Demo
-[Try it here](https://your-streamlit-url.streamlit.app)
+[Try it here](https://ai-knowledge-assistant-8tzpyee9kazbsnrb2lxpnq.streamlit.app/)
 
 ## 🏗️ Architecture
 
