@@ -2,7 +2,6 @@ from langchain_chroma import Chroma
 from app.vector_store.chroma_db import embedding_model , chromadb_client
 from app.core.logger import get_logger
 from app.core.config import settings
-import chromadb
 
 logger = get_logger("retrieval")
 
