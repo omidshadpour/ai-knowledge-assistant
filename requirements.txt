@@ -1,0 +1,6 @@
+fastapi
+langchain
+langchain-community
+pypdf
+sentence-transformers
+langchain-huggingface
