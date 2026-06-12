@@ -2,17 +2,15 @@ import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
-
 import streamlit as st
 import requests
 import uuid
-from app.core.config import settings
 
 API_URL = "https://om1d-ai-knowledge-assistant.hf.space"
 
 st.set_page_config(page_title = "RAG Chatbot" , layout = "wide")
 
-st.title("📄 RAG Chatbot (FastAPI + Ollama)")
+st.title("📄 RAG Chatbot (FastAPI + Groq)")
 
 if "session_id" not in st.session_state:
     st.session_state.session_id = str(uuid.uuid4())
