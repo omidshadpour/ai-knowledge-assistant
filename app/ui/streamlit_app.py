@@ -33,7 +33,8 @@ if uploaded_file:
 
         response = requests.post(
             f"{API_URL}/upload",
-            files = {"file": uploaded_file}
+            files = {"file": (uploaded_file.name , uploaded_file , "application/pdf")},
+            timeout=180 
         )
 
         if response.status_code == 200:
