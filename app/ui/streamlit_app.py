@@ -7,6 +7,7 @@ import requests
 import uuid
 
 API_URL = "https://scorch-engraved-exes.ngrok-free.dev"
+HEADERS = {"ngrok-skip-browser-warning": "true"}
 
 st.set_page_config(page_title = "RAG Chatbot" , layout = "wide")
 
@@ -32,6 +33,7 @@ if uploaded_file:
         response = requests.post(
             f"{API_URL}/upload",
             files = {"file": (uploaded_file.name , uploaded_file , "application/pdf")},
+            headers=HEADERS,
             timeout=180 
         )
 
@@ -74,6 +76,7 @@ if user_input and st.session_state.document_id:
                 "document_id": st.session_state.document_id,
                 "session_id": st.session_state.session_id
             },
+            headers=HEADERS,
             stream = True
         ) as response:
             if response.status_code ==200:
