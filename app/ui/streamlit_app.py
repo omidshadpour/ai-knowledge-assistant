@@ -9,6 +9,7 @@ import uuid
 API_URL = "https://scorch-engraved-exes.ngrok-free.dev"
 HEADERS = {"ngrok-skip-browser-warning": "true"}
 
+
 st.set_page_config(page_title = "RAG Chatbot" , layout = "wide")
 
 st.title("📄 RAG Chatbot (FastAPI + Groq)")
