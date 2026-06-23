@@ -6,7 +6,7 @@ import streamlit as st
 import requests
 import uuid
 
-API_URL = "https://scorch-engraved-exes.ngrok-free.dev"
+API_URL = "https://om1d-ai-knowledge-assistant.hf.space"
 HEADERS = {"ngrok-skip-browser-warning": "true"}
 
 
